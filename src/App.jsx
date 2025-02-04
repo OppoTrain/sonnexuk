@@ -36,7 +36,8 @@ import Why from "./pages/tips-menopause-why/why";
 import Menomen from "./pages/tips-menopause-men/meno-men";
 import Child from "./pages/tips-childbirth/childbirth";
 import Brands from "./pages/products/products";
-
+import Applicat from "./pages/applicat/applicat";
+import Other from "./pages/other-brands/other-brands";
 function App() {
   return (
     <div
@@ -75,6 +76,8 @@ function App() {
             <Route path="/tips-menopause-men" element={<Menomen />} />
             <Route path="/tips-all-childbirth" element={<Child />} />
             <Route path="/brands" element={<Brands />} />
+            <Route path="/application" element={<Applicat />} />
+            <Route path="/other-brands" element={<Other />} />
           </Routes>
         </div>
         {/* إضافة الفوتر أسفل كل الصفحات */}

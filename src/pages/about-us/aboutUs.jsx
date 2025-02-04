@@ -14,13 +14,7 @@ const AboutUs = () => {
       <div className="about-us-container">
         {/* رأس الصفحة مع الصورة */}
         <div className="about-us-header">
-          <div className="about-us-image-container">
-            <img
-              src={aboutUsImage}
-              alt={t("aboutUs.imageAlt")}
-              className="about-us-image"
-            />
-          </div>
+          <div className="about-us-image-container"></div>
           <div className="about-us-text">
             <h1>{t("aboutUs.heading")}</h1>
             <p className="about-us-tagline">{t("aboutUs.tagline")}</p>

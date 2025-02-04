@@ -14,9 +14,13 @@
     "becontrol": "Sonnex Becontrol"
   },
   "tabs": {
-    "products": "Products",
+    "Our Brands": "Our Brands",
+    "Why Sonnex": "Why Sonnex",
     "contact": "Contact",
     "tips": "Tips",
+    "Application": "Application",
+    "Other Brands": "Other Brands",
+
     "instruction": "Please select a tab to view its content below."
   },
   "contact": {
