@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./products.css";
 import img from "../../assets/png blue_.png";
-
+import NavBar from "../../components/navBar/navBar";
 function Products() {
   const navigate = useNavigate();
   const { t } = useTranslation(); // استخدم الترجمة
@@ -39,6 +39,7 @@ function Products() {
 
   return (
     <div className="page-container">
+      <NavBar />
       <div className="products-container">
         {products.map((product, index) => (
           <div

@@ -1,107 +1,125 @@
 .navbar {
   background-color: #ffffff;
   padding: 1px 20px;
-  display: flex; /* استخدام الفليكس للتنسيق */
-  justify-content: space-between; /* توزيع العناصر */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف */
-  width: 100%; /* تأكد من أن الشريط يأخذ العرض الكامل */
-  position: fixed; /* جعل الشريط مثبتًا في أعلى الصفحة */
-  top: 0; /* موضعه من الأعلى */
-  left: 0; /* موضعه من اليسار */
-  height: 80px; /* ارتفاع أصغر للشريط */
-  z-index: 1000; /* لضمان أنه فوق العناصر الأخرى */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  z-index: 1000;
 }
 
 .navbar-container {
-  display: flex; /* استخدام الفليكس للتنسيق */
-  align-items: center; /* محاذاة عمودية */
-  width: 100%; /* تأكد من أن الحاوية تأخذ العرض الكامل */
-  max-width: 1200px; /* يمكنك تحديد حد أقصى للعروض إذا رغبت */
-  margin: 0 auto; /* مركزيًا داخل الصفحة */
-  padding: 0 20px; /* حشوة جانبية */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .logo-container {
-  flex: 1; /* استخدام الفليكس لأخذ المساحة المتبقية */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .button-container {
-  display: flex; /* استخدام الفليكس للتنسيق */
-  margin-right: -150px;
+  display: flex;
+  align-items: center; /* محاذاة الأيقونة والزر في نفس المستوى */
 }
 
 .icon {
-  margin: 0 10px; /* مسافة بين الأيقونات */
-  cursor: pointer; /* تغيير شكل المؤشر عند المرور */
+  margin-left: 10px; /* مسافة بين الأيقونة والزر */
+  cursor: pointer;
 }
 
 .globe-icon {
-  font-size: 1.5rem; /* حجم أيقونة الكرة الأرضية */
+  font-size: 1.5rem;
 }
 
 .button {
-  background-color: #ffffff; /* لون زر الخلفية */
-  border: none; /* إزالة الحدود */
-  padding: 8px 16px; /* حشوة */
-  border-radius: 4px; /* زوايا دائرية */
-  cursor: pointer; /* تغيير شكل المؤشر عند المرور */
-  color: #4caf50; /* لون الخط */
-  font-weight: bold; /* جعل الخط عريض */
-  transition: background-color 0.3s; /* تأثير الانتقال */
-  margin-left: 20px; /* إضافة مسافة بين الأزرار، إذا كان هناك أكثر من زر */
+  background-color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #000000;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-left: 20px;
 }
 
 .button:hover {
-  background-color: #e0e0e0; /* لون عند المرور */
+  background-color: #e0e0e0;
 }
 
 .download-icon {
-  font-size: 1.5rem; /* حجم أيقونة التحميل */
-  cursor: pointer; /* تغيير شكل المؤشر عند المرور */
-  margin-left: 10px; /* مسافة بين الزر والأيقونة */
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
 .logo {
   width: 200px;
-  height: 120px;
+  height: 88px;
   margin-top: -10px !important;
-  size: 80px;
-  cursor: pointer; /* تغيير شكل المؤشر عند المرور */
+  cursor: pointer;
 }
 
 .dropdown-toggle {
-  background-color: transparent; /* خلفية شفافة */
-  border: none; /* إزالة الحدود */
-  cursor: pointer; /* تغيير شكل المؤشر عند المرور */
-  padding: 10px; /* حشوة */
-  transition: background-color 0.3s; /* تأثير الانتقال */
-}
-
-.dropdown-toggle:hover {
-  background-color: #f0f0f0; /* لون عند المرور */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s;
 }
 
 .flag-icon {
-  width: 20px; /* عرض العلم */
-  height: auto; /* ارتفاع تلقائي */
-  margin-right: 8px; /* مسافة بين العلم والنص */
+  width: 20px;
+  height: auto;
+  margin-right: 8px;
 }
+
 .globe-container {
   margin-left: -150px;
 }
 
-.icon.globe-icon {
-  font-size: 1.5rem; /* حجم الأيقونة */
-  cursor: pointer; /* تغيير شكل المؤشر عند المرور */
-  background-color: #ffffff; /* خلفية بيضاء */
-  border-radius: 50%; /* دائرة كاملة */
-  padding: 6px; /* حشوة داخلية */
-  transition: background-color 0.3s; /* تأثير الانتقال */
+.button-container {
+  margin-right: -150px;
 }
 
-.icon.globe-icon:hover {
-  background-color: #f0f0f0; /* تغيير لون الخلفية عند المرور */
+.icon-menu {
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 2rem; /* تكبير حجم الأيقونة */
+}
+
+.menu {
+  position: absolute;
+  top: 80px; /* موضع القائمة تحت الشريط العلوي */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 200px; /* عرض القائمة */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.menu ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu ul li:hover {
+  background-color: #f0f0f0;
 }

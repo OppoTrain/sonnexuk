@@ -35,6 +35,7 @@ import Leu from "./pages/tips-leu/leu";
 import Why from "./pages/tips-menopause-why/why";
 import Menomen from "./pages/tips-menopause-men/meno-men";
 import Child from "./pages/tips-childbirth/childbirth";
+import Brands from "./pages/products/products";
 
 function App() {
   return (
@@ -73,6 +74,7 @@ function App() {
             <Route path="/tips-menopause-why" element={<Why />} />
             <Route path="/tips-menopause-men" element={<Menomen />} />
             <Route path="/tips-all-childbirth" element={<Child />} />
+            <Route path="/brands" element={<Brands />} />
           </Routes>
         </div>
         {/* إضافة الفوتر أسفل كل الصفحات */}
