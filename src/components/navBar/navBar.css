@@ -1,0 +1,107 @@
+.navbar {
+  background-color: #ffffff;
+  padding: 1px 20px;
+  display: flex; /* استخدام الفليكس للتنسيق */
+  justify-content: space-between; /* توزيع العناصر */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+  width: 100%; /* تأكد من أن الشريط يأخذ العرض الكامل */
+  position: fixed; /* جعل الشريط مثبتًا في أعلى الصفحة */
+  top: 0; /* موضعه من الأعلى */
+  left: 0; /* موضعه من اليسار */
+  height: 80px; /* ارتفاع أصغر للشريط */
+  z-index: 1000; /* لضمان أنه فوق العناصر الأخرى */
+}
+
+.navbar-container {
+  display: flex; /* استخدام الفليكس للتنسيق */
+  align-items: center; /* محاذاة عمودية */
+  width: 100%; /* تأكد من أن الحاوية تأخذ العرض الكامل */
+  max-width: 1200px; /* يمكنك تحديد حد أقصى للعروض إذا رغبت */
+  margin: 0 auto; /* مركزيًا داخل الصفحة */
+  padding: 0 20px; /* حشوة جانبية */
+}
+
+.logo-container {
+  flex: 1; /* استخدام الفليكس لأخذ المساحة المتبقية */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  display: flex; /* استخدام الفليكس للتنسيق */
+  margin-right: -150px;
+}
+
+.icon {
+  margin: 0 10px; /* مسافة بين الأيقونات */
+  cursor: pointer; /* تغيير شكل المؤشر عند المرور */
+}
+
+.globe-icon {
+  font-size: 1.5rem; /* حجم أيقونة الكرة الأرضية */
+}
+
+.button {
+  background-color: #ffffff; /* لون زر الخلفية */
+  border: none; /* إزالة الحدود */
+  padding: 8px 16px; /* حشوة */
+  border-radius: 4px; /* زوايا دائرية */
+  cursor: pointer; /* تغيير شكل المؤشر عند المرور */
+  color: #4caf50; /* لون الخط */
+  font-weight: bold; /* جعل الخط عريض */
+  transition: background-color 0.3s; /* تأثير الانتقال */
+  margin-left: 20px; /* إضافة مسافة بين الأزرار، إذا كان هناك أكثر من زر */
+}
+
+.button:hover {
+  background-color: #e0e0e0; /* لون عند المرور */
+}
+
+.download-icon {
+  font-size: 1.5rem; /* حجم أيقونة التحميل */
+  cursor: pointer; /* تغيير شكل المؤشر عند المرور */
+  margin-left: 10px; /* مسافة بين الزر والأيقونة */
+}
+
+.logo {
+  width: 200px;
+  height: 120px;
+  margin-top: -10px !important;
+  size: 80px;
+  cursor: pointer; /* تغيير شكل المؤشر عند المرور */
+}
+
+.dropdown-toggle {
+  background-color: transparent; /* خلفية شفافة */
+  border: none; /* إزالة الحدود */
+  cursor: pointer; /* تغيير شكل المؤشر عند المرور */
+  padding: 10px; /* حشوة */
+  transition: background-color 0.3s; /* تأثير الانتقال */
+}
+
+.dropdown-toggle:hover {
+  background-color: #f0f0f0; /* لون عند المرور */
+}
+
+.flag-icon {
+  width: 20px; /* عرض العلم */
+  height: auto; /* ارتفاع تلقائي */
+  margin-right: 8px; /* مسافة بين العلم والنص */
+}
+.globe-container {
+  margin-left: -150px;
+}
+
+.icon.globe-icon {
+  font-size: 1.5rem; /* حجم الأيقونة */
+  cursor: pointer; /* تغيير شكل المؤشر عند المرور */
+  background-color: #ffffff; /* خلفية بيضاء */
+  border-radius: 50%; /* دائرة كاملة */
+  padding: 6px; /* حشوة داخلية */
+  transition: background-color 0.3s; /* تأثير الانتقال */
+}
+
+.icon.globe-icon:hover {
+  background-color: #f0f0f0; /* تغيير لون الخلفية عند المرور */
+}
