@@ -1,0 +1,67 @@
+/* الكابتشن داخل السلايدر */
+.carousel-caption {
+  position: absolute;
+  top: 30%; /* وضع الكابتشن في الثلث العلوي */
+  left: 50%; /* محاذاة للمنتصف */
+  transform: translate(-50%, -50%); /* تأكد من التمركز الكامل */
+  color: #1c5792; /* لون النص */
+  text-align: center;
+  font-size: 35px; /* حجم النص */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* تأثير الظل */
+  text-transform: uppercase; /* جعل النص بأحرف كبيرة */
+  width: 700px; /* تحديد عرض النص */
+  font-weight: 600; /* جعل النص عريض */
+  font-family: "Nunito", sans-serif;
+}
+
+/* الصور داخل السلايدر */
+/* الصور داخل السلايدر */
+.carousel-item img {
+  width: 80%; /* تقليل العرض إلى 80% من الحاوية */
+  height: 90vh; /* تقليل الارتفاع إلى 80% من ارتفاع الشاشة */
+  object-fit: contain; /* ضمان الحفاظ على نسبة الصورة */
+  margin: 0 auto; /* توسيط الصور داخل السلايدر */
+}
+
+/* النصوص داخل كل صورة */
+.carousel-item h3 {
+  margin-top: 20px;
+  font-size: 40px; /* حجم النص */
+}
+
+/* السلايدر بالكامل */
+.carousel-inner {
+  width: 100%; /* عرض كامل للسلايدر */
+  height: 100vh; /* ارتفاع كامل للشاشة */
+}
+
+/* تنسيق الأسهم */
+.carousel-control-prev {
+  left: -50px; /* مسافة إضافية بين السهم والصورة */
+}
+
+.carousel-control-next {
+  right: -50px; /* مسافة إضافية بين السهم والصورة */
+}
+
+/* تنسيق الأيقونات داخل الأسهم */
+.custom-arrow .carousel-control-prev-icon,
+.custom-arrow .carousel-control-next-icon {
+  background-color: black; /* اللون الأسود */
+  border-radius: 50%; /* الشكل الدائري */
+  padding: 10px; /* مساحة إضافية حول الأيقونة */
+  width: 40px; /* عرض الأيقونة */
+  height: 40px; /* ارتفاع الأيقونة */
+}
+
+/* تأثير عند التمرير فوق الأسهم */
+.custom-arrow .carousel-control-prev-icon:hover,
+.custom-arrow .carousel-control-next-icon:hover {
+  background-color: #333; /* تغيير اللون عند التمرير */
+}
+
+/* الصور العامة */
+img {
+  max-width: 100%; /* عرض الصورة لا يتجاوز حجم الحاوية */
+  size: 40px;
+}

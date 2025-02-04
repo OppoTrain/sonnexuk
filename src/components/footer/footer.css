@@ -1,0 +1,66 @@
+/* الفوتر الأساسي */
+.footer {
+  width: 100vw; /* تغطية العرض الكامل للصفحة */
+  padding: 40px 20px; /* حشوة مناسبة */
+
+  box-sizing: border-box; /* حساب الحشوة ضمن الأبعاد */
+  background-color: transparent; /* جعل الخلفية شفافة */
+  color: #212529; /* لون النص */
+  font-family: Arial, sans-serif;
+  margin-top: auto; /* ضمان وجود الفوتر في الأسفل */
+  position: relative; /* لضمان ثبات الفوتر */
+  z-index: 1; /* تحديد ترتيب الفوتر فوق العناصر الأخرى إذا لزم الأمر */
+}
+
+/* النصوص والعناوين */
+.footer h4 {
+  font-size: 18px; /* حجم خط مناسب */
+  font-weight: bold;
+  color: #495057; /* لون النص */
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #495057; /* خط تحت العنوان */
+  padding-bottom: 5px;
+}
+
+/* الأقسام داخل الفوتر */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* مرونة على الشاشات الصغيرة */
+  max-width: 1200px; /* عرض محتوى متناسق */
+  margin: 0 auto; /* توسيط المحتوى */
+  gap: 20px; /* مسافات بين الأقسام */
+}
+
+/* القوائم */
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  font-size: 14px; /* حجم خط مناسب */
+  color: #495057;
+  line-height: 1.8; /* تباعد بين العناصر */
+  cursor: pointer; /* مؤشر ليدل على التفاعل */
+  transition: color 0.3s ease; /* تأثير عند التحويم */
+}
+
+.footer ul li:hover {
+  color: #6c757d; /* لون مختلف عند التحويم */
+}
+
+/* الوضع الأيمن للنصوص في حالة اللغة العربية */
+.footer[dir="rtl"] {
+  text-align: right;
+}
+
+/* تنسيق على الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* عرض الأقسام عموديًا */
+    gap: 30px; /* مسافة إضافية بين الأقسام */
+  }
+}
