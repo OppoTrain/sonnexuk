@@ -11,6 +11,7 @@
   left: 0;
   height: 80px;
   z-index: 1000;
+  background-color: #fcfaf7; /* جعل الخلفية شفافة */ /* جعل الخلفية شفافة */
 }
 
 .navbar-container {
@@ -44,10 +45,10 @@
 }
 
 .button {
-  background-color: #ffffff;
-  border: none;
+  background-color: #fcfaf7; /* جعل الخلفية شفافة */
   padding: 8px 16px;
-  border-radius: 4px;
+
+  border: #000000 solid 2px;
   cursor: pointer;
   color: #000000;
   font-weight: bold;

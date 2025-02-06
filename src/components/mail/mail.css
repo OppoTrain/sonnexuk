@@ -1,0 +1,70 @@
+#contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    min-height:50vh;
+  }
+  
+  .contact-header {
+    width: 50%;
+    height: 150px; /* تقليص الارتفاع */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* تقليل المسافة بين العناصر */
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 0.9rem; /* تقليص حجم الخط */
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="email"] {
+    padding: 8px; /* تقليل الحشوة */
+    font-size: 0.8rem; /* تقليص حجم الخط */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 180px;
+    margin-right: 50px;
+    width: 50%;
+  }
+  
+  input[type="email"]:focus {
+    border-color: #5fa8d7;
+  }
+  
+  .submit-btn {
+    padding: 8px 18px; /* تقليل الحشوة داخل الزر */
+    background-color: #5fa8d7;
+    color: white;
+    font-size: 0.9rem; /* تقليص حجم الخط */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 180px;
+    margin-right: 50px;
+    width: 50%;
+  }
+  
+  .submit-btn:hover {
+    background-color: #4e90c2;
+  }
+  
+  h1 {
+    font-size: 1.3rem; /* تقليص حجم العنوان */
+    margin-bottom: 10px; /* تقليل المسافة أسفل العنوان */
+    text-align: center;
+    color: #333;
+  }
+  

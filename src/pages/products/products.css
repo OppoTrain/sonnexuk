@@ -1,73 +1,67 @@
 .products-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 أعمدة */
-  grid-template-rows: auto; /* الارتفاع تلقائي */
-  gap: 2px; /* تقليل المسافة بين الكاردز */
-  padding: 20px; /* المسافة حول الحاوية */
-  grid-template-areas:
-    "card1 . card2"
-    ". card3 ."
-    "card4 . card5"; /* توزيع الكاردز */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* توزيع تلقائي */
+  gap: 20px; /* مسافة بين الكاردات */
+  padding: 40px; /* توسيع المساحة حول العناصر */
+  background-color: #fcfaf7;
+  justify-items: center; /* توسيط الكاردات */
 }
-
-/* تعيين أماكن الكاردز */
-.product-card:nth-child(1) {
-  grid-area: card1;
+.products-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
 }
-
-.product-card:nth-child(2) {
-  grid-area: card2;
+.products-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  margin-left: -1150px;
 }
-
-.product-card:nth-child(3) {
-  grid-area: card3;
-}
-
-.product-card:nth-child(4) {
-  grid-area: card4;
-}
-
-.product-card:nth-child(5) {
-  grid-area: card5;
-}
-
-/* الكارد الواحد */
+/* تصميم الكارد */
 .product-card {
-  position: relative;
-  background-color: #f5f5f5; /* لون خلفية */
-  border-radius: 12px; /* زوايا دائرية */
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* ظل خفيف */
-  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 12px;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
   cursor: pointer;
-  width: 250px; /* عرض الكارد */
-  height: 300px; /* ارتفاع الكارد */
-  margin: auto; /* توسيط الكارد */
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px; /* حجم مناسب */
+  height: 350px; /* ارتفاع مناسب */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* تأثير التحويم على الكارد */
 .product-card:hover {
-  transform: scale(1.08);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.06);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* صورة المنتج */
 .product-image {
   width: 100%;
-  height: 120px; /* تقليل ارتفاع الصورة */
-  object-fit: cover; /* تغطية دون تشويه */
-  border-bottom: 2px solid #ddd; /* خط سفلي بين الصورة والنص */
+  height: 180px;
+  object-fit: contain;
+  border-bottom: 2px solid #ddd;
 }
 
 /* اسم المنتج */
 .product-name {
-  margin: 10px;
-  font-size: 16px; /* تقليل حجم النص */
-  text-align: center;
-  color: #333;
+  margin-top: 10px;
+  font-size: 22px;
   font-weight: bold;
-  text-transform: uppercase;
-  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 10px;
+  text-align: center;
 }
+/* عنوان المنتجات */

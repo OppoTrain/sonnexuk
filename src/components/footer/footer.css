@@ -4,7 +4,7 @@
   padding: 40px 20px; /* حشوة مناسبة */
 
   box-sizing: border-box; /* حساب الحشوة ضمن الأبعاد */
-  background-color: transparent; /* جعل الخلفية شفافة */
+  background-color: #fcfaf7; /* جعل الخلفية شفافة */
   color: #212529; /* لون النص */
   font-family: Arial, sans-serif;
   margin-top: auto; /* ضمان وجود الفوتر في الأسفل */

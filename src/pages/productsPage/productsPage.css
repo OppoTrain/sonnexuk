@@ -20,7 +20,7 @@
   justify-content: center;
   gap: 20px; /* مسافة بين الأزرار */
   padding: 10px 0;
-  background-color: #fff;
+  background-color: rgb(247, 230, 209); /* جعل الخلفية شفافة */
   border-bottom: 2px solid #ddd;
   margin-bottom: 20px; /* مسافة أسفل التبويبات */
 }
@@ -55,7 +55,7 @@
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: rgb(247, 230, 209); /* جعل الخلفية شفافة */
   width: 100%; /* عرض المحتوى */
   max-width: 1000px; /* الحد الأقصى للعرض */
   text-align: center; /* توسيط النص داخل المحتوى */

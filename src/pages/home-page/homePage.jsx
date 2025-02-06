@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Slider from "../../components/slider/slider";
 import NavBar from "../../components/navBar/navBar";
 import Footer from "../../components/footer/footer";
+import Mail from "../../components/mail/mail";
 import Products from "../products/products";
 function HomePage() {
   return (
@@ -11,6 +12,7 @@ function HomePage() {
       <NavBar />
       <Slider />
       <Products />
+      <Mail />
     </div>
   );
 }

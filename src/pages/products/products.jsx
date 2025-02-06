@@ -30,16 +30,12 @@ function Products() {
       image: img,
       path: "/mom",
     },
-    {
-      name: t("products.becontrol"),
-      image: img,
-      path: "/becontrol",
-    },
   ];
 
   return (
     <div className="page-container">
       <NavBar />
+      <h1 className="products-title">Our Brands </h1>{" "}
       <div className="products-container">
         {products.map((product, index) => (
           <div
