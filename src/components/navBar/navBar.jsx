@@ -20,15 +20,15 @@ function NavBar() {
     navigate("/");
   };
 
-  // const handleDownload = () => {
-  //   const fileUrl = "/brochure.pdf";
-  //   const link = document.createElement("a");
-  //   link.href = fileUrl;
-  //   link.download = "brochure.pdf";
-  //   document.body.appendChild(link);
-  //   link.click();
-  //   document.body.removeChild(link);
-  // };
+  const handleDownload = () => {
+     const fileUrl = "https://drive.google.com/file/d/1gV3CwQeV3V8MjPhYxES5HKv3rXHpx8GV/view?usp=drive_link"
+     const link = document.createElement("a");
+     link.href = fileUrl;
+     link.download = "brochure.pdf";
+     document.body.appendChild(link);
+     link.click();
+     document.body.removeChild(link);
+   };
 
   return (
     <>
@@ -51,6 +51,13 @@ function NavBar() {
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
+          { 
+            <FontAwesomeIcon
+              icon={faDownload}
+              className="icon download-icon"
+              onClick={handleDownload}
+              title="Download brochure"
+            /> }
 
           <div className="logo-container" onClick={handleLogoClick}>
             <img src={img} alt="Logo" className="logo" />
@@ -63,13 +70,6 @@ function NavBar() {
             >
               {t("navbar.products")}
             </button>
-            {/* 
-            <FontAwesomeIcon
-              icon={faDownload}
-              className="icon download-icon"
-              onClick={handleDownload}
-              title="Download brochure"
-            /> */}
           </div>
         </div>
       </nav>

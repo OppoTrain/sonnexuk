@@ -1,15 +1,15 @@
 /* الكابتشن داخل السلايدر */
 .carousel-caption {
   position: absolute;
-  top: 30%; /* وضع الكابتشن في الثلث العلوي */
-  left: 50%; /* محاذاة للمنتصف */
+  top: 40%; /* وضع الكابتشن في الثلث العلوي */
+  left: 30%; /* محاذاة للمنتصف */
   transform: translate(-50%, -50%); /* تأكد من التمركز الكامل */
-  color: #1c5792; /* لون النص */
+  color: black;
   text-align: center;
-  font-size: 35px; /* حجم النص */
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* تأثير الظل */
+  font-size: 30px; /* حجم النص */
+  /*text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* تأثير الظل */
   text-transform: uppercase; /* جعل النص بأحرف كبيرة */
-  width: 700px; /* تحديد عرض النص */
+  width: 600px; /* تحديد عرض النص */
   font-weight: 600; /* جعل النص عريض */
   font-family: "Nunito", sans-serif;
 }

@@ -1,5 +1,6 @@
 import React from "react";
-import bella1 from "../../assets/png-01.png";
+import bella1 from "../../assets/sliderimg1.jpg";
+import bella2 from "../../assets/sliderimg2.jpg";
 import { useTranslation } from "react-i18next";
 import "./slider.css";
 
@@ -21,7 +22,7 @@ export default function Slider() {
         </div>
 
         <div className="carousel-item">
-          <img src={bella1} className="d-block w-100" alt="Pastel Blue Image" />
+          <img src={bella2} className="d-block w-100" alt="Pastel Blue Image" />
 
           <h3 className="carousel-caption">{t("slider.caption2")}</h3>
         </div>
