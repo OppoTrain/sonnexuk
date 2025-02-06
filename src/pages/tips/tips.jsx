@@ -15,7 +15,7 @@ function Tips() {
 
       <div className="tips-row">
         {/* Teenagers Section */}
-        <div className="tips-section" onClick={() => navigate("/teenager")}>
+        <div className="tips-section" onClick={() => navigate("")}>
           <div className="tips-overlay light-gray">
             <div className="tips-content">
               <h1 className="tips-title">{t("tips.teenagers.title")}</h1>
@@ -27,10 +27,7 @@ function Tips() {
         </div>
 
         {/* For All of Us Section */}
-        <div
-          className="tips-section"
-          onClick={() => navigate("/for-all-of-us")}
-        >
+        <div className="tips-section" onClick={() => navigate("")}>
           <div className="tips-overlay light-blue">
             <div className="tips-content">
               <h1 className="tips-title">{t("tips.forAllOfUs.title")}</h1>
@@ -42,7 +39,7 @@ function Tips() {
         </div>
 
         {/* Menopause Section */}
-        <div className="tips-section" onClick={() => navigate("/menopause")}>
+        <div className="tips-section" onClick={() => navigate("")}>
           <div className="tips-overlay light-pink">
             <div className="tips-content">
               <h1 className="tips-title">{t("tips.menopause.title")}</h1>
